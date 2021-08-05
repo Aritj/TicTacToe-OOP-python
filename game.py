@@ -75,7 +75,7 @@ class TicTacToeTable():
         return False
     
     def checkColumns(self, player):
-        columns = [[] for i in range(self.size)] # Cates n amount of empty columns
+        columns = [[] for i in range(self.size)] # Creates n amount of empty columns
         for row in self.table:
             index = 0
             for cell in row:
@@ -148,9 +148,6 @@ class TicTacToeGame():
     def __init__(self, n = 3):
         '''Constructor for TicTacToe game specifying game size (n x n). Defaulted to 3 x 3.'''
         self.table = TicTacToeTable(n)
-
-    def changeSize(self, size):
-        self.table.createTable(size)
 
     def getChoice(self):
         '''Prompt user for input'''
