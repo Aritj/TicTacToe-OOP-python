@@ -2,7 +2,7 @@ import random
 
 class TicTacToeCell():
     '''A TicTacToeCell object contains a given integer value or a player's placement'''
-    value: str
+    value: int
 
     def __init__(self, value):
         '''Initializes the cell with a given integer value.'''
